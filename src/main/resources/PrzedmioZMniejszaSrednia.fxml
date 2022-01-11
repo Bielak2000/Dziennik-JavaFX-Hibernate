@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="401.0" prefWidth="600.0">
+         <top>
+            <Label text="Przedmioty" textFill="#9a1818" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <TableView fx:id="tablica" prefHeight="313.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="przedmiot" prefWidth="302.0" text="Przedmiot" />
+                <TableColumn fx:id="srednia" prefWidth="297.0" text="Srednia ocena" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <Button fx:id="Wyjscie" layoutX="480.0" layoutY="428.0" mnemonicParsing="false" onAction="#wyjdz" prefHeight="25.0" prefWidth="106.0" text="Wyjście" />
+      <Button fx:id="powrot" layoutX="371.0" layoutY="428.0" mnemonicParsing="false" onAction="#wroc" prefHeight="25.0" prefWidth="97.0" text="Wróc" />
+   </children>
+</AnchorPane>
